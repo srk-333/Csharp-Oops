@@ -57,14 +57,15 @@
     <Compile Include="Polymorphism\MethodOverloading\Addition.cs" />
     <Compile Include="Polymorphism\MethodOverloading\ImpMethodOverloading.cs" />
     <Compile Include="Polymorphism\MethodOverloading\Substitution.cs" />
+    <Compile Include="Polymorphism\MethodOverriding\Animal.cs" />
+    <Compile Include="Polymorphism\MethodOverriding\Cow.cs" />
+    <Compile Include="Polymorphism\MethodOverriding\Dog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Polymorphism\MethodOverriding\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
