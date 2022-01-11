@@ -1,4 +1,5 @@
-﻿using OopsProgram.Inheritance; //importing namespace in our Main namespace
+﻿using OopsProgram.Encapsulation;
+using OopsProgram.Inheritance; //importing namespace in our Main namespace
 using OopsProgram.Inheritance.HierarchicalInheritance;
 using OopsProgram.Inheritance.SingleInheritane; //importing namespace in our Main namespace
 using System;
@@ -32,7 +33,7 @@ namespace OopsProgram
 
             // Implementing Hierarchical Inheritance
             Console.WriteLine("\nEnter any one number 0 or 1");
-            int number=int.Parse(Console.ReadLine());
+            int number = int.Parse(Console.ReadLine());
             if (number == 0)
             {
                 Student student = new Student();   //Creating object for Student class
@@ -40,10 +41,15 @@ namespace OopsProgram
                 student.StudentDetail();         //calling Method of Student class
             }
             else
-            { 
+            {
                 Teacher teacher = new Teacher();    //Creating object for Teacher class
                 teacher.TeacherDetails();          // calling Method of Teacher class
             }
+
+            // Encapsulation Implementation
+            ImpEncapulation encapulation = new ImpEncapulation();  //creating object of ImpEncapulation class
+            encapulation.GetStudent();                            // calling method in ImpEncapulation class using object variable.
+            encapulation.Bank();
             Console.ReadLine();
         }
     }

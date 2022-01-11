@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encapsulation\BankBalance.cs" />
+    <Compile Include="Encapsulation\ImpEncapulation.cs" />
+    <Compile Include="Encapsulation\StudentDet.cs" />
     <Compile Include="Inheritance\Bike.cs" />
     <Compile Include="Inheritance\Car.cs" />
     <Compile Include="Inheritance\HierarchicalInheritance\College.cs" />
