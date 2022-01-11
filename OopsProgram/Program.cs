@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OopsProgram.Inheritance;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,10 @@ namespace OopsProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to OOPs program Practice");
+            Console.WriteLine("Welcome to OOPs program Practice \n ");
+            Bike vechile = new Bike();
+            vechile.CarBrand();           
+            vechile.BikeBrand();
             Console.ReadLine();
         }
     }
