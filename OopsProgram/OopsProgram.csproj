@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Inheritance\Bike.cs" />
     <Compile Include="Inheritance\Car.cs" />
+    <Compile Include="Inheritance\HierarchicalInheritance\College.cs" />
+    <Compile Include="Inheritance\HierarchicalInheritance\Student.cs" />
+    <Compile Include="Inheritance\HierarchicalInheritance\Teacher.cs" />
     <Compile Include="Inheritance\SingleInheritane\Animal.cs" />
     <Compile Include="Inheritance\SingleInheritane\Lion.cs" />
     <Compile Include="Inheritance\Vechile.cs" />
@@ -54,8 +57,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Inheritance\MultipleInheritance\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
