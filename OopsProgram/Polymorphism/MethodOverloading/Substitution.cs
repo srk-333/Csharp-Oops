@@ -12,6 +12,10 @@ namespace OopsProgram.Polymorphism.MethodOverloading
         * Method name same but diff parameters
         * In parameters we can provide diff order of data type
         */
+        public int Sub(int a)
+        {
+            return a;
+        }
         public int Sub(int a, int b)
         {
             return a - b;
