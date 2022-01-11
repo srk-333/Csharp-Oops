@@ -1,7 +1,8 @@
-﻿using OopsProgram.Encapsulation;
-using OopsProgram.Inheritance; //importing namespace in our Main namespace
-using OopsProgram.Inheritance.HierarchicalInheritance;
-using OopsProgram.Inheritance.SingleInheritane; //importing namespace in our Main namespace
+﻿using OopsProgram.Encapsulation;      //importing namespace in our Main namespace
+using OopsProgram.Inheritance;       //importing namespace in our Main namespace
+using OopsProgram.Inheritance.HierarchicalInheritance;    //importing namespace in our Main namespace
+using OopsProgram.Inheritance.SingleInheritane;          //importing namespace in our Main namespace
+using OopsProgram.Polymorphism.MethodOverloading;       //importing namespace in our Main namespace
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace OopsProgram
         {
             Console.WriteLine("Welcome to OOPs program Practice \n ");
 
-            // Creating object of Bike to get Multilevel Inheritance
+            //Creating object of Bike to get Multilevel Inheritance
             Bike vechile = new Bike();
             vechile.CarBrand();           //calling Method of Car Class bcz of Multilevel Inheretence
             vechile.BikeBrand();          // calling Method of Bike class.
@@ -31,7 +32,7 @@ namespace OopsProgram
             lion.Eat();
             lion.Run();
 
-            // Implementing Hierarchical Inheritance
+            //Implementing Hierarchical Inheritance
             Console.WriteLine("\nEnter any one number 0 or 1");
             int number = int.Parse(Console.ReadLine());
             if (number == 0)
@@ -46,10 +47,15 @@ namespace OopsProgram
                 teacher.TeacherDetails();          // calling Method of Teacher class
             }
 
-            // Encapsulation Implementation
+            //Encapsulation Implementation
             ImpEncapulation encapulation = new ImpEncapulation();  //creating object of ImpEncapulation class
             encapulation.GetStudent();                            // calling method in ImpEncapulation class using object variable.
             encapulation.Bank();
+
+            // Method Overloading Implementation
+            ImpMethodOverloading imp = new ImpMethodOverloading();  //creating object of ImpMethodOverloading class
+            imp.AddAll();                                          // calling method in ImpMethodOverloading class using object variable.
+            imp.Substitue();                                
             Console.ReadLine();
         }
     }
