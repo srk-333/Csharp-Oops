@@ -3,6 +3,7 @@ using OopsProgram.Inheritance;       //importing namespace in our Main namespace
 using OopsProgram.Inheritance.HierarchicalInheritance;    //importing namespace in our Main namespace
 using OopsProgram.Inheritance.SingleInheritane;          //importing namespace in our Main namespace
 using OopsProgram.Polymorphism.MethodOverloading;       //importing namespace in our Main namespace
+using OopsProgram.Polymorphism.MethodOverriding;       //importing namespace in our Main namespace
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,10 +53,18 @@ namespace OopsProgram
             encapulation.GetStudent();                            // calling method in ImpEncapulation class using object variable.
             encapulation.Bank();
 
-            // Method Overloading Implementation
+            // Method Overloading / Static Polymorphism Implementation
             ImpMethodOverloading imp = new ImpMethodOverloading();  //creating object of ImpMethodOverloading class
             imp.AddAll();                                          // calling method in ImpMethodOverloading class using object variable.
-            imp.Substitue();                                
+            imp.Substitue();
+
+            // Method Overriding / Dynamic Polymorphism Implementation
+            Dog d = new Dog();         // Creating Object of Dog class
+            d.DogDetail();            // calling Method of dog class
+            d.Sound();               // calling overriden method in Dog class
+            Cow cow = new Cow();    // Creating Object of Cow class
+            cow.CowDetail();
+            cow.Sound();           // calling overriden method in Cow class
             Console.ReadLine();
         }
     }
