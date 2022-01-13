@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Construtor\DefaultConst.cs" />
+    <Compile Include="Construtor\ImpCons.cs" />
+    <Compile Include="Construtor\PassByRef\PassByRef.cs" />
+    <Compile Include="Construtor\PassByValue\PassByValue.cs" />
     <Compile Include="Encapsulation\BankBalance.cs" />
     <Compile Include="Encapsulation\ImpEncapulation.cs" />
     <Compile Include="Encapsulation\StudentDet.cs" />

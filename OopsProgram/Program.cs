@@ -1,9 +1,14 @@
-﻿using OopsProgram.Encapsulation;      //importing namespace in our Main namespace
-using OopsProgram.Inheritance;       //importing namespace in our Main namespace
-using OopsProgram.Inheritance.HierarchicalInheritance;    //importing namespace in our Main namespace
-using OopsProgram.Inheritance.SingleInheritane;          //importing namespace in our Main namespace
-using OopsProgram.Polymorphism.MethodOverloading;       //importing namespace in our Main namespace
-using OopsProgram.Polymorphism.MethodOverriding;       //importing namespace in our Main namespace
+﻿//importing namespace in our Main namespace
+using OopsProgram.Construtor;
+using OopsProgram.Construtor.PassByRef;
+using OopsProgram.Construtor.PassByValue;
+using OopsProgram.Encapsulation;      
+using OopsProgram.Inheritance;      
+using OopsProgram.Inheritance.HierarchicalInheritance;    
+using OopsProgram.Inheritance.SingleInheritane;         
+using OopsProgram.Polymorphism.MethodOverloading;      
+using OopsProgram.Polymorphism.MethodOverriding;     
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -65,7 +70,16 @@ namespace OopsProgram
             Cow cow = new Cow();    // Creating Object of Cow class
             cow.CowDetail();
             cow.Sound();           // calling overriden method in Cow class
+
+            //passing values to Constructor while creating object
+            ImpCons impCons = new ImpCons(10, 11, 12);
+            impCons.show();    // calling method
+
+            PassByValue passByValue = new PassByValue(4,5);
+            PassByRef passByRef = new PassByRef("Ram",24,8067452378);
+            DefaultConst defaultConst = new DefaultConst();     //without parameters constructor 
             Console.ReadLine();
         }
     }
+ 
 }
