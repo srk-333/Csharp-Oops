@@ -1,4 +1,6 @@
 ﻿//importing namespace in our Main namespace
+using OopsProgram.Abstraction;
+using OopsProgram.Abstraction.AbstractionTwo;
 using OopsProgram.Construtor;
 using OopsProgram.Construtor.PassByRef;
 using OopsProgram.Construtor.PassByValue;
@@ -78,6 +80,14 @@ namespace OopsProgram
             PassByValue passByValue = new PassByValue(4,5);
             PassByRef passByRef = new PassByRef("Ram",24,8067452378);
             DefaultConst defaultConst = new DefaultConst();     //without parameters constructor 
+
+            // implementation of abstraction
+            DerAbstractClass der = new DerAbstractClass();
+            der.Test();
+            der.Show();
+            AbstractBank bank = new AbstractBank( 1000,200 );
+            bank.Bank();
+            bank.Test();
             Console.ReadLine();
         }
     }

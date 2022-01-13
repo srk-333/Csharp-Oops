@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstraction\AbstractClass.cs" />
+    <Compile Include="Abstraction\AbstractionTwo\AbstractBank.cs" />
+    <Compile Include="Abstraction\DerAbstractClass.cs" />
     <Compile Include="Construtor\DefaultConst.cs" />
     <Compile Include="Construtor\ImpCons.cs" />
     <Compile Include="Construtor\PassByRef\PassByRef.cs" />
